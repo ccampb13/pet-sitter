@@ -2,10 +2,28 @@ doctype html
 html(lang='en')
   head
     meta(charset='utf-8')
-    title JS++
+    title Pet Sitter
+    link(rel='stylesheet', href='./css/buttons.css')
     link(rel='stylesheet', href='./css/app.css')
   body
-    h1 JS++
+    header
+      h1 Pet Sitter
+
+    #controls
+      select#gender
+        option Male
+        option Female
+      select#species
+        option(value='dog.png') Dog
+        option(value='lion.png') Lion
+        option(value='bear.png') Bear
+        option(value='horse.png') Horse
+      input#name(placeholder='Name')
+      input#age(placeholder='Age')
+      button#add.button.glow.button-highlight Add!
+
+
+    #pets
 
     script(src='./js/vendor/traceur.js')
     script(src='./js/vendor/experimental.js')
@@ -13,4 +31,7 @@ html(lang='en')
     script(src='./js/vendor/lodash-2.4.1.js')
     script(src='./js/vendor/moment-2.6.0.js')
     script(src='./js/es5/main.js')
+    script(src='./js/vendor/buttons.js')
+    script(src='./js/es6/database.js')
+    script(src='./js/es6/pet.js')
     script(src='./js/es6/main.js')
